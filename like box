@@ -1,0 +1,69 @@
+<style type='text/css'>
+/* Message Box */
+#box-message {
+position:fixed !important;
+position:absolute;
+top:-1000px;
+left:50%;
+margin:0px 0px 0px -182px;
+width:300px;
+height:auto;
+padding:16px;
+background:#fff;
+font:normal Dosis, Georgia, Serif;
+color:#111;
+border:2px solid #333;
+-webkit-box-shadow:0px 1px 2px rgba(0,0,0,0.4);
+-moz-box-shadow:0px 1px 2px rgba(0,0,0,0.4);
+box-shadow:0px 1px 2px rgba(0,0,0,0.4);
+-webkit-border-radius:10px;
+-moz-border-radius:10px;
+border-radius:10px;
+}
+#box-message a.close {
+position:absolute;
+top:-10px;
+right:-10px;
+background:#fff;
+font:bold 16px Arial, Sans-Serif;
+text-decoration:none;
+line-height:22px;
+width:22px;
+text-align:center;
+color:#111;
+border:2px solid #333;
+-webkit-box-shadow:0px 1px 2px rgba(0,0,0,0.4);
+-moz-box-shadow:0px 1px 2px rgba(0,0,0,0.4);
+box-shadow:0px 1px 2px rgba(0,0,0,0.4);
+-webkit-border-radius:22px;
+-moz-border-radius:22px;
+border-radius:22px;
+cursor:pointer;
+}
+#twitterx {
+background: #EEF9FD;
+padding: 10px;
+text-align:center;
+border: 1px solid #C7DBE2;
+border-top: 0;
+}
+</style>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
+<script type='text/javascript'>
+$(window).bind("load", function() {
+// Animate Top Value When Page Loaded Completed
+$('#box-message').animate({top:"50px"}, 1000);
+// Remove Mailbox When Close Button On Click
+$('a.close').click(function() {
+$(this).parent().fadeOut();
+return false;
+});
+});
+</script>
+<div id='box-message'>
+<!-- HTML Start -->
+<center>
+<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fdjemzmwb&amp;width&amp;height=62&amp;colorscheme=light&amp;show_faces=false&amp;header=true&amp;stream=false&amp;show_border=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:62px;" allowtransparency="true"></iframe></center>
+<!-- HTML End -->
+<a class='close' href='#'>&times;</a>
+</div>
